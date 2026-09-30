@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import Foundation
 
@@ -9,7 +9,7 @@ import Foundation
 enum KeepAwakeCatalogContract {
     static func run(_ suite: TestSuite) {
         let source = (try? String(contentsOfFile:
-                "Sources/Vorssaint/Services/CommandBar/CommandBarCatalog.swift", encoding: .utf8)) ?? ""
+                "Sources/MacUtils/Services/CommandBar/CommandBarCatalog.swift", encoding: .utf8)) ?? ""
         let code = source.components(separatedBy: "\n")
             .map { line in line.range(of: "//").map { String(line[..<$0.lowerBound]) } ?? line }
             .joined(separator: "\n")

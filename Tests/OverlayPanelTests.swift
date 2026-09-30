@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import AppKit
 
@@ -23,31 +23,31 @@ enum OverlayPanelTests {
         // HUDs, previews, pickers and the menu's positioning helper: none is a
         // document window, and each floats over other apps' windows.
         let surfaces = [
-            "Sources/Vorssaint/App/AppDelegate.swift",
-            "Sources/Vorssaint/UI/PermissionGuideOverlay.swift",
-            "Sources/Vorssaint/UI/QuitProtection/QuitProtectionHUD.swift",
-            "Sources/Vorssaint/Services/QuickTools/QuickToolHUD.swift",
-            "Sources/Vorssaint/Services/QuickTools/QuickLauncherService.swift",
-            "Sources/Vorssaint/Services/QuickTools/CameraPreviewService.swift",
-            "Sources/Vorssaint/Services/QuickTools/RecentCaptureService.swift",
-            "Sources/Vorssaint/Services/QuickTools/ScreenshotSelectionController.swift",
-            "Sources/Vorssaint/Services/QuickTools/ScreenshotQuickPreviewController.swift",
-            "Sources/Vorssaint/Services/QuickTools/ScreenshotPinController.swift",
-            "Sources/Vorssaint/Services/QuickTools/QRResultController.swift",
-            "Sources/Vorssaint/Services/QuickTools/ScratchpadService.swift",
-            "Sources/Vorssaint/Services/Snippets/SnippetLibraryService.swift",
-            "Sources/Vorssaint/Services/Clipboard/ClipboardHistoryService.swift",
-            "Sources/Vorssaint/Services/CommandBar/CommandBarService.swift",
-            "Sources/Vorssaint/Services/Switcher/AppSwitcher.swift",
-            "Sources/Vorssaint/Services/RadialMenu/RadialMenuService.swift",
-            "Sources/Vorssaint/Services/RadialMenu/RadialNowPlayingService.swift",
-            "Sources/Vorssaint/Services/DockPreview/DockPreviewService.swift",
-            "Sources/Vorssaint/Services/WindowLayout/WindowLayoutService.swift",
-            "Sources/Vorssaint/Services/DiskImageInstaller/DiskImageInstallerService.swift",
-            "Sources/Vorssaint/Services/Finder/FinderCutPaste.swift",
-            "Sources/Vorssaint/Services/Display/BrightnessOSD.swift",
-            "Sources/Vorssaint/Services/CleaningMode/CleaningModeManager.swift",
-            "Sources/Vorssaint/Services/Recorder/RecorderIndicator.swift",
+            "Sources/MacUtils/App/AppDelegate.swift",
+            "Sources/MacUtils/UI/PermissionGuideOverlay.swift",
+            "Sources/MacUtils/UI/QuitProtection/QuitProtectionHUD.swift",
+            "Sources/MacUtils/Services/QuickTools/QuickToolHUD.swift",
+            "Sources/MacUtils/Services/QuickTools/QuickLauncherService.swift",
+            "Sources/MacUtils/Services/QuickTools/CameraPreviewService.swift",
+            "Sources/MacUtils/Services/QuickTools/RecentCaptureService.swift",
+            "Sources/MacUtils/Services/QuickTools/ScreenshotSelectionController.swift",
+            "Sources/MacUtils/Services/QuickTools/ScreenshotQuickPreviewController.swift",
+            "Sources/MacUtils/Services/QuickTools/ScreenshotPinController.swift",
+            "Sources/MacUtils/Services/QuickTools/QRResultController.swift",
+            "Sources/MacUtils/Services/QuickTools/ScratchpadService.swift",
+            "Sources/MacUtils/Services/Snippets/SnippetLibraryService.swift",
+            "Sources/MacUtils/Services/Clipboard/ClipboardHistoryService.swift",
+            "Sources/MacUtils/Services/CommandBar/CommandBarService.swift",
+            "Sources/MacUtils/Services/Switcher/AppSwitcher.swift",
+            "Sources/MacUtils/Services/RadialMenu/RadialMenuService.swift",
+            "Sources/MacUtils/Services/RadialMenu/RadialNowPlayingService.swift",
+            "Sources/MacUtils/Services/DockPreview/DockPreviewService.swift",
+            "Sources/MacUtils/Services/WindowLayout/WindowLayoutService.swift",
+            "Sources/MacUtils/Services/DiskImageInstaller/DiskImageInstallerService.swift",
+            "Sources/MacUtils/Services/Finder/FinderCutPaste.swift",
+            "Sources/MacUtils/Services/Display/BrightnessOSD.swift",
+            "Sources/MacUtils/Services/CleaningMode/CleaningModeManager.swift",
+            "Sources/MacUtils/Services/Recorder/RecorderIndicator.swift",
         ]
         for path in surfaces {
             let source = (try? String(contentsOfFile: path, encoding: .utf8)) ?? ""

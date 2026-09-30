@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import CoreGraphics
 import Foundation
@@ -41,7 +41,7 @@ enum LinearScrollTapTests {
     }
 
     static func run(_ suite: TestSuite) {
-        let name = "com.vorssaint.tests.linear-scroll-tap.\(UUID().uuidString)"
+        let name = "my.super.macutils.tests.linear-scroll-tap.\(UUID().uuidString)"
         let defaults = Foundation.UserDefaults(suiteName: name)!
         StandardDefaults.standard = defaults
         defer {

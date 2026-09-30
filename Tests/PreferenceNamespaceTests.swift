@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import Foundation
 
@@ -49,17 +49,17 @@ enum PreferenceNamespaceTests {
                      "the preference namespace guard discovers suite declarations")
 
         let constructor = "UserDefaults(suiteName" + ": "
-        suite.expect(suiteNames(in: constructor + #""vorss.tests.literal")"#)
-                         == ["vorss.tests.literal"],
+        suite.expect(suiteNames(in: constructor + #""macutils.tests.literal")"#)
+                         == ["macutils.tests.literal"],
                      "literal preference suite names are recognized")
-        suite.expect(suiteNames(in: #"let name = "com.vorssaint.tests.local""# + "\n"
-                         + constructor + "name)") == ["com.vorssaint.tests.local"],
+        suite.expect(suiteNames(in: #"let name = "my.super.macutils.tests.local""# + "\n"
+                         + constructor + "name)") == ["my.super.macutils.tests.local"],
                      "locally declared literal preference suite names are resolved")
-        let reusedName = #"let name = "vorss.tests.first""# + "\n"
+        let reusedName = #"let name = "macutils.tests.first""# + "\n"
             + constructor + "name)\n"
             + #"let name = "unsafe.temporary""# + "\n"
             + constructor + "name)"
-        suite.expect(suiteNames(in: reusedName) == ["vorss.tests.first", "unsafe.temporary"],
+        suite.expect(suiteNames(in: reusedName) == ["macutils.tests.first", "unsafe.temporary"],
                      "reused local preference suite names resolve at each call")
         suite.expect(!suiteNames(in: reusedName).allSatisfy(isSwept),
                      "a temporary unswept preference namespace fails the guard")

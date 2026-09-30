@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import CoreGraphics
 import Foundation
@@ -87,7 +87,7 @@ enum DisplayRestorationTests {
     }
 
     class Fixture {
-        static let log = Logger(subsystem: "vorssaint.tests", category: "restoration")
+        static let log = Logger(subsystem: "macutils.tests", category: "restoration")
         var deferredRestoration = BrightnessSupport.DeferredDisplayRestoration()
         var lidNotificationPort: IONotificationPortRef?
         var lidNotification: io_object_t = 0

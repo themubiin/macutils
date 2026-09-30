@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import Foundation
 
@@ -66,7 +66,7 @@ enum CommandBarEmojiContract {
     }
 
     static func run(_ suite: TestSuite) {
-        let domain = "com.vorssaint.tests.command-bar-emoji"
+        let domain = "my.super.macutils.tests.command-bar-emoji"
         let defaults = Foundation.UserDefaults(suiteName: domain)!
         defaults.removePersistentDomain(forName: domain)
         UserDefaults.standard = defaults

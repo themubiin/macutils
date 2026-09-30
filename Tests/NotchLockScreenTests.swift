@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import CoreGraphics
 import Foundation
@@ -54,7 +54,7 @@ enum NotchLockScreenTests {
                      "the lock screen and its sounds are both opt-in")
         suite.expect(SettingsBackupSupport.exportKeys().isSuperset(of: [DefaultsKey.notchLockScreen, DefaultsKey.notchLockSounds]),
                      "settings backups carry the lock screen preferences")
-        let domain = "com.vorssaint.tests.notch-lock-screen"
+        let domain = "my.super.macutils.tests.notch-lock-screen"
         let defaults = UserDefaults(suiteName: domain)!
         defaults.removePersistentDomain(forName: domain)
         defer { defaults.removePersistentDomain(forName: domain) }

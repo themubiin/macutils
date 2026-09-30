@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import Foundation
 
@@ -8,7 +8,7 @@ import Foundation
 enum MenuPanelToggleLabelContract {
     static func run(_ suite: TestSuite) {
         let source = (try? String(contentsOfFile:
-                "Sources/Vorssaint/UI/MenuPanel/MenuPanelView.swift", encoding: .utf8)) ?? ""
+                "Sources/MacUtils/UI/MenuPanel/MenuPanelView.swift", encoding: .utf8)) ?? ""
         let code = source.components(separatedBy: "\n")
             .filter { !$0.trimmingCharacters(in: .whitespaces).hasPrefix("//") }
             .joined(separator: "\n")

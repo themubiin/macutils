@@ -1,11 +1,11 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/logo-dark.svg">
-    <img src="docs/assets/readme/logo.svg" width="220" alt="Vorssaint logo">
+    <img src="docs/assets/readme/logo.svg" width="220" alt="MacUtils logo">
   </picture>
 </p>
 
-<h1 align="center">Vorssaint</h1>
+<h1 align="center">MacUtils</h1>
 
 <p align="center">
   One menu bar icon doing the job of a dozen paid Mac apps.<br>
@@ -13,37 +13,36 @@
 </p>
 
 <p align="center">
-  <a href="https://vorssaint.com">Website</a> ·
+  <a href="https://mubin.me/">Website</a> ·
   <a href="#install">Install</a> ·
   <a href="#everything-it-does">Features</a> ·
   <a href="#private-by-default">Privacy</a> ·
   <a href="CHANGELOG.md">Changelog</a> ·
-  <a href="mailto:hello@vorssaint.com">Contact</a> ·
-  <a href="https://discord.gg/M6BwWH4BJp">Discord</a>
+  <a href="mailto:hello@macutils.com">Contact</a> ·
 </p>
 
 <p align="center">
-  <a href="https://github.com/vorssaint/vorssaint-utils/releases"><img src="https://img.shields.io/github/v/release/vorssaint/vorssaint-utils?label=release&color=4c8dff" alt="Latest release"></a>
-  <a href="https://github.com/vorssaint/vorssaint-utils/releases"><img src="https://img.shields.io/github/downloads/vorssaint/vorssaint-utils/total?color=4c8dff" alt="Downloads"></a>
-  <a href="https://github.com/vorssaint/vorssaint-utils/actions/workflows/ci.yml"><img src="https://github.com/vorssaint/vorssaint-utils/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="CI status"></a>
+  <a href="https://github.com/themubiin/macutils/releases"><img src="https://img.shields.io/github/v/release/macutils/macutils-utils?label=release&color=4c8dff" alt="Latest release"></a>
+  <a href="https://github.com/themubiin/macutils/releases"><img src="https://img.shields.io/github/downloads/macutils/macutils-utils/total?color=4c8dff" alt="Downloads"></a>
+  <a href="https://github.com/themubiin/macutils/actions/workflows/ci.yml"><img src="https://github.com/themubiin/macutils/actions/workflows/ci.yml/badge.svg?branch=main&event=push" alt="CI status"></a>
   <a href="#what-you-need"><img src="https://img.shields.io/badge/macOS-14%2B%20Apple%20Silicon-black" alt="macOS 14 and newer, Apple Silicon"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0--or--later-blue" alt="License GPL 3.0 or later"></a>
 </p>
 
 <p align="center">
-  <a href="https://buymeacoffee.com/vorssaint">
+  <a href="https://pg.eps.com.bd/DefaultPaymentLink?id=0B6804EE">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="217" height="60" alt="Buy Me a Coffee">
   </a>
 </p>
 
 <p align="center">
   For anything private, email
-  <a href="mailto:hello@vorssaint.com"><strong>hello@vorssaint.com</strong></a>.
+  <a href="mailto:hello@macutils.com"><strong>hello@macutils.com</strong></a>.
 </p>
 
 <p align="center">
-  <a href="https://trendshift.io/repositories/53716?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-53716" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/53716" alt="vorssaint/vorssaint-utils | Trendshift" width="250" height="55"></a>
-  <a href="https://trendshift.io/repositories/53716?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-53716" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/53716/weekly?language=Swift" alt="vorssaint/vorssaint-utils | Trendshift weekly ranking" width="250" height="55"></a>
+  <a href="https://trendshift.io/repositories/53716?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-53716" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/53716" alt="macutils/macutils-utils | Trendshift" width="250" height="55"></a>
+  <a href="https://trendshift.io/repositories/53716?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-53716" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/53716/weekly?language=Swift" alt="macutils/macutils-utils | Trendshift weekly ranking" width="250" height="55"></a>
 </p>
 
 <p align="center">
@@ -164,17 +163,17 @@ Reorder or hide panel sections, choose a compact layout, and export settings to 
 - **Keep awake.** Keep your Mac working on a timer, with the lid closed, or while selected apps, power or external displays are present.
 - **Displays.** Control individual displays and brightness, with hardware control where supported, half or quarter steps for the brightness keys, optional extra dimming below a monitor's minimum, and software dimming as a fallback.
 - **Extra brightness.** Use a MacBook Pro XDR display's HDR headroom to go beyond its normal maximum brightness.
-- **Bluetooth on sleep.** Disconnect Bluetooth during sleep and restore it on wake only if Vorssaint turned it off.
+- **Bluetooth on sleep.** Disconnect Bluetooth during sleep and restore it on wake only if MacUtils turned it off.
 
 ## Install
 
 With [Homebrew](https://brew.sh):
 
 ```sh
-brew install --cask vorssaint
+brew install --cask macutils
 ```
 
-Or grab the disk image from the [releases page](https://github.com/vorssaint/vorssaint-utils/releases) and drag Vorssaint into Applications.
+Or grab the disk image from the [releases page](https://github.com/themubiin/macutils/releases) and drag MacUtils into Applications.
 
 Builds are signed with an Apple Developer ID and notarized, so macOS opens them without a fuss and your permissions survive updates.
 
@@ -183,10 +182,10 @@ Builds are signed with an Apple Developer ID and notarized, so macOS opens them 
 With Homebrew:
 
 ```sh
-brew uninstall --cask vorssaint
+brew uninstall --cask macutils
 ```
 
-To remove Vorssaint completely, including its settings and permissions:
+To remove MacUtils completely, including its settings and permissions:
 
 ```sh
 ./Tools/uninstall.sh
@@ -194,7 +193,7 @@ To remove Vorssaint completely, including its settings and permissions:
 
 ## Private by default
 
-Vorssaint is local-first, with no account, analytics or tracking. The network is touched only by things you can see: update checks, the speed test, Homebrew actions, optional online lyric lookup, temporary screenshot or recording links and feedback you explicitly send. The full story is in the [privacy notes](docs/PRIVACY.md).
+MacUtils is local-first, with no account, analytics or tracking. The network is touched only by things you can see: update checks, the speed test, Homebrew actions, optional online lyric lookup, temporary screenshot or recording links and feedback you explicitly send. The full story is in the [privacy notes](docs/PRIVACY.md).
 
 Permissions get the same treatment. Every one is optional, the app explains each in plain words, shows which features actually use it, and even tells you when a permission you granted is no longer needed by anything, with a shortcut to revoke it.
 
@@ -212,13 +211,13 @@ See the [permissions guide](docs/PERMISSIONS.md) for which features need access 
 ### Build it yourself
 
 ```sh
-git clone https://github.com/vorssaint/vorssaint-utils.git
-cd vorssaint-utils
+git clone https://github.com/themubiin/macutils.git
+cd macutils-utils
 ./build.sh --dev            # build the separate Developer variant
 ./build.sh --dev --install  # install and launch it
 ```
 
-Xcode Command Line Tools are the only requirement. The [contributing guide](CONTRIBUTING.md) covers the layout and conventions. Official builds come only from the maintainer: the GPL covers the source, while the Vorssaint name, icon and look are covered by [TRADEMARKS.md](TRADEMARKS.md), so forks need their own identity.
+Xcode Command Line Tools are the only requirement. The [contributing guide](CONTRIBUTING.md) covers the layout and conventions. Official builds come only from the maintainer: the GPL covers the source, while the MacUtils name, icon and look are covered by [TRADEMARKS.md](TRADEMARKS.md), so forks need their own identity.
 
 ## When something misbehaves
 
@@ -235,9 +234,9 @@ See [troubleshooting](docs/TROUBLESHOOTING.md) for launch problems, permissions 
 
 ## Community
 
-Vorssaint went from first commit to the front of GitHub trending in three days, top of the Swift charts, and issues and pull requests have shaped every release since. Bug reports, feature ideas and translations are all welcome, starting from the [contributing guide](CONTRIBUTING.md).
+MacUtils went from first commit to the front of GitHub trending in three days, top of the Swift charts, and issues and pull requests have shaped every release since. Bug reports, feature ideas and translations are all welcome, starting from the [contributing guide](CONTRIBUTING.md).
 
-Vorssaint is free and will stay that way. If it earned its place in your menu bar, a star helps other people find it, and a [coffee](https://buymeacoffee.com/vorssaint) keeps the maintainer awake, with or without the Keep awake feature.
+MacUtils is free and will stay that way. If it earned its place in your menu bar, a star helps other people find it, and a [coffee](https://pg.eps.com.bd/DefaultPaymentLink?id=0B6804EE) keeps the maintainer awake, with or without the Keep awake feature.
 
 ## Acknowledgements
 
@@ -245,8 +244,8 @@ Vorssaint is free and will stay that way. If it earned its place in your menu ba
 
 ## License
 
-[GPL 3.0 or later](LICENSE), copyright 2026 Vorssaint. The license covers the source code; the Vorssaint name, logo and look are covered separately in [TRADEMARKS.md](TRADEMARKS.md).
+[GPL 3.0 or later](LICENSE), copyright 2026 MacUtils. The license covers the source code; the MacUtils name, logo and look are covered separately in [TRADEMARKS.md](TRADEMARKS.md).
 
 <p align="center">
-  <sub>Made by <a href="https://x.com/vorssaint">@vorssaint</a></sub>
+  <sub>Made by <a href="https://x.com/theMubiin">@macutils</a></sub>
 </p>

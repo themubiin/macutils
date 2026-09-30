@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 // generate_sources.py appends these checks to the real HUD source. No panel is
 // created: layout and animation configuration run on an offscreen content view.

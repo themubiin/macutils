@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import AppKit
 import Carbon.HIToolbox
@@ -921,8 +921,8 @@ enum UtilitiesFeatureTests {
         suite.expect(RadialMenuSupport.needsAccessibility([shortcutProfile]),
                "profile with keyboard shortcut slice needs Accessibility")
 
-        let profileTestDefaults = UserDefaults(suiteName: "com.vorssaint.tests.radialProfiles")!
-        profileTestDefaults.removePersistentDomain(forName: "com.vorssaint.tests.radialProfiles")
+        let profileTestDefaults = UserDefaults(suiteName: "my.super.macutils.tests.radialProfiles")!
+        profileTestDefaults.removePersistentDomain(forName: "my.super.macutils.tests.radialProfiles")
         profileTestDefaults.set(true, forKey: AppFeature.radialMenu.availabilityKey)
         profileTestDefaults.set(true, forKey: DefaultsKey.radialMenuEnabled)
 
@@ -990,7 +990,7 @@ enum UtilitiesFeatureTests {
         suite.expect(wheelShortcuts() == [seedShortcut],
                "until a wheel is saved the role key is the shortcut the page lists")
         let shortcutsPageCode = ((try? String(
-            contentsOfFile: "Sources/Vorssaint/UI/Settings/ShortcutsSettings.swift",
+            contentsOfFile: "Sources/MacUtils/UI/Settings/ShortcutsSettings.swift",
             encoding: .utf8)) ?? "")
             .components(separatedBy: "\n")
             .filter { !$0.trimmingCharacters(in: .whitespaces).hasPrefix("//") }
@@ -1009,7 +1009,7 @@ enum UtilitiesFeatureTests {
                 && radialRowCode.contains(".manageButton")
                 && !radialRowCode.contains("ShortcutRecorderButton"),
                "the Keyboard Shortcuts page shows the wheels' shortcuts and links to their page instead of recording the role key")
-        profileTestDefaults.removePersistentDomain(forName: "com.vorssaint.tests.radialProfiles")
+        profileTestDefaults.removePersistentDomain(forName: "my.super.macutils.tests.radialProfiles")
 
         let testImage = NSImage(size: NSSize(width: 16, height: 16))
         testImage.lockFocus()
@@ -1038,8 +1038,8 @@ enum UtilitiesFeatureTests {
                 && RadialMenuSupport.claimedMouseButtons(iconProfilesData) == fullyDecodedButtons,
                "claimed mouse buttons read without the items match the full profile decode")
 
-        let legacyButtonDefaults = UserDefaults(suiteName: "com.vorssaint.tests.radialLegacyButton")!
-        legacyButtonDefaults.removePersistentDomain(forName: "com.vorssaint.tests.radialLegacyButton")
+        let legacyButtonDefaults = UserDefaults(suiteName: "my.super.macutils.tests.radialLegacyButton")!
+        legacyButtonDefaults.removePersistentDomain(forName: "my.super.macutils.tests.radialLegacyButton")
         legacyButtonDefaults.set(RadialMenuMouseTrigger.forward.rawValue,
                                  forKey: DefaultsKey.radialMenuMouseButton)
         suite.expect(RadialMenuSupport.claimedMouseButtons(nil, defaults: legacyButtonDefaults)
@@ -1048,7 +1048,7 @@ enum UtilitiesFeatureTests {
                                                          defaults: legacyButtonDefaults)
                 == [MouseButtonShortcutSupport.forwardButtonNumber],
                "claimed mouse buttons fall back to the legacy button key like the full decode")
-        legacyButtonDefaults.removePersistentDomain(forName: "com.vorssaint.tests.radialLegacyButton")
+        legacyButtonDefaults.removePersistentDomain(forName: "my.super.macutils.tests.radialLegacyButton")
 
         var reorderItems = [
             RadialMenuItem(kind: .app, name: "A"),
@@ -1084,7 +1084,7 @@ enum UtilitiesFeatureTests {
         // the button is claimed, nothing past that point hands an event back,
         // or the down and the up split.
         let radialServiceCode = ((try? String(
-            contentsOfFile: "Sources/Vorssaint/Services/RadialMenu/RadialMenuService.swift",
+            contentsOfFile: "Sources/MacUtils/Services/RadialMenu/RadialMenuService.swift",
             encoding: .utf8)) ?? "")
             .components(separatedBy: "\n")
             .filter { !$0.trimmingCharacters(in: .whitespaces).hasPrefix("//") }
@@ -1271,8 +1271,8 @@ enum UtilitiesFeatureTests {
                "disk eject exclusions travel in backups")
 
         // MARK: A sleeping clock
-        for shareService in ["Sources/Vorssaint/Services/QuickTools/ScreenshotShareService.swift",
-                             "Sources/Vorssaint/Services/Recorder/RecordingShareService.swift"] {
+        for shareService in ["Sources/MacUtils/Services/QuickTools/ScreenshotShareService.swift",
+                             "Sources/MacUtils/Services/Recorder/RecordingShareService.swift"] {
             let shareCode = ((try? String(contentsOfFile: shareService, encoding: .utf8)) ?? "")
                 .components(separatedBy: "\n")
                 .filter { !$0.trimmingCharacters(in: .whitespaces).hasPrefix("//") }
@@ -1288,7 +1288,7 @@ enum UtilitiesFeatureTests {
         // the label's cell adds unaccounted for -- the labels have to be the
         // ones asked.
         let quitHUDSource = (try? String(
-            contentsOfFile: "Sources/Vorssaint/UI/QuitProtection/QuitProtectionHUD.swift",
+            contentsOfFile: "Sources/MacUtils/UI/QuitProtection/QuitProtectionHUD.swift",
             encoding: .utf8)) ?? ""
         suite.expect(quitHUDSource.count > 1_000,
                "the quit protection HUD source is readable (\(quitHUDSource.count) bytes)")
@@ -1324,7 +1324,7 @@ enum UtilitiesFeatureTests {
                                                    excludedVolumes: ["1234-5678-abcd"]),
                "an excluded volume UUID is honoured only when the caller hands the UUID over")
         let diskExclusionsListCode = ((try? String(
-            contentsOfFile: "Sources/Vorssaint/UI/Settings/DiskExclusionsList.swift",
+            contentsOfFile: "Sources/MacUtils/UI/Settings/DiskExclusionsList.swift",
             encoding: .utf8)) ?? "").components(separatedBy: "\n")
             .filter { !$0.trimmingCharacters(in: .whitespaces).hasPrefix("//") }
             .joined(separator: "\n")

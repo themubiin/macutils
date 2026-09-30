@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import AppKit
 import CoreGraphics
@@ -83,7 +83,7 @@ enum NotchCapsuleTests {
     }
 
     private static func preferenceContracts(_ suite: TestSuite) {
-        let domain = "com.vorssaint.tests.notch-capsule"
+        let domain = "my.super.macutils.tests.notch-capsule"
         let defaults = UserDefaults(suiteName: domain)!
         defaults.removePersistentDomain(forName: domain)
         defer { defaults.removePersistentDomain(forName: domain) }
@@ -355,7 +355,7 @@ enum NotchCapsuleTests {
     /// A fitted capsule grows from its top edge, keeps its margins, lowers
     /// open and closed alike, and leaves every other island untouched.
     private static func fitContracts(_ suite: TestSuite) {
-        let domain = "com.vorssaint.tests.notch-capsule-fit"
+        let domain = "my.super.macutils.tests.notch-capsule-fit"
         let defaults = UserDefaults(suiteName: domain)!
         defaults.removePersistentDomain(forName: domain)
         defer { defaults.removePersistentDomain(forName: domain) }

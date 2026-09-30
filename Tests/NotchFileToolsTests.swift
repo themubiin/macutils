@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import Foundation
 
@@ -8,7 +8,7 @@ enum NotchFileToolsTests {
         NotchDownloadFolderChoiceTests.run(suite)
         MediaDialogHostTests.run { suite.expect($0, $1) }
         ShelfDragCompletionTests.run(suite)
-        let domain = "com.vorssaint.tests.notch-files"
+        let domain = "my.super.macutils.tests.notch-files"
         let defaults = UserDefaults(suiteName: domain)!
         defaults.removePersistentDomain(forName: domain)
         defer { defaults.removePersistentDomain(forName: domain) }

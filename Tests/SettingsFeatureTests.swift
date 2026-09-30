@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import AppKit
 import Carbon.HIToolbox
@@ -461,7 +461,7 @@ enum SettingsFeatureTests {
         // Strip comments before asserting: "X appears before Y" would otherwise
         // be satisfied by a doc comment mentioning either.
         let backupServiceLines = ((try? String(
-            contentsOfFile: "Sources/Vorssaint/Services/SettingsBackup.swift",
+            contentsOfFile: "Sources/MacUtils/Services/SettingsBackup.swift",
             encoding: .utf8)) ?? "").components(separatedBy: "\n")
         let captureAt = backupServiceLines.firstIndex {
             isCodeLine($0) && $0.contains("SettingsBackupSupport.pathIdentities(")

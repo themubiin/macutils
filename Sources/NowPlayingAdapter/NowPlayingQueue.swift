@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import Foundation
 import ObjectiveC
@@ -7,8 +7,8 @@ import ObjectiveC
 /// The queue stays inside the existing isolated adapter. No request, timer or
 /// retained player object survives closing the queue surface.
 enum NotchNativeQueue {
-    private static let work = DispatchQueue(label: "com.vorssaint.now-playing-queue")
-    private static let callbacks = DispatchQueue(label: "com.vorssaint.now-playing-queue-callbacks")
+    private static let work = DispatchQueue(label: "my.super.macutils.now-playing-queue")
+    private static let callbacks = DispatchQueue(label: "my.super.macutils.now-playing-queue-callbacks")
     private static var requestID: UUID?
     private static var identity: Identity?
     private static var revision = UUID()

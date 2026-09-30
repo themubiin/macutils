@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 // Renders the installer (DMG) window background: a clean light panel with the
 // app title and an arrow pointing from the app icon toward the Applications
@@ -36,7 +36,7 @@ NSGradient(colors: [
 ])?.draw(in: full, angle: -90)
 
 // Title (origin is bottom-left, so high y = near the top).
-let title = "Vorssaint"
+let title = "MacUtils"
 let titleAttrs: [NSAttributedString.Key: Any] = [
     .font: NSFont.systemFont(ofSize: 26, weight: .bold),
     .foregroundColor: NSColor(calibratedWhite: 0.12, alpha: 1),

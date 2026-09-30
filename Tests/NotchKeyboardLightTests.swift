@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import Foundation
 
@@ -17,7 +17,7 @@ enum NotchKeyboardLightTests {
                 }
             }
         }
-        let domain = "com.vorssaint.tests.notch-keyboard-light"
+        let domain = "my.super.macutils.tests.notch-keyboard-light"
         let defaults = UserDefaults(suiteName: domain)!
         defaults.removePersistentDomain(forName: domain)
         defer { defaults.removePersistentDomain(forName: domain) }

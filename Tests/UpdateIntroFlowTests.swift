@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import AppKit
 
@@ -58,7 +58,7 @@ enum UpdateIntroFlowTests {
     }
 
     static func run(_ suite: TestSuite) {
-        let domain = "com.vorssaint.tests.update-intros.\(UUID().uuidString)"
+        let domain = "my.super.macutils.tests.update-intros.\(UUID().uuidString)"
         UserDefaults.standard = Foundation.UserDefaults(suiteName: domain)!
         defer {
             UserDefaults.standard.removePersistentDomain(forName: domain)

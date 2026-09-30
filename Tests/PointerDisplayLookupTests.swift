@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Vorssaint
+// Made with ❤️ by Muntasir Mubin
 
 import AppKit
 import Carbon.HIToolbox
@@ -44,7 +44,7 @@ enum PointerDisplayLookupContract {
         @MainActor enum ScreenshotCaptureEngine {
             static var displays: [CGDirectDisplayID] = []
             static func captureDisplay(_ displayID: CGDirectDisplayID, includePointer: Bool,
-                                       hideVorssaintWindows: Bool,
+                                       hideMacUtilsWindows: Bool,
                                        protectedWindowIDs: Set<CGWindowID>) async -> CGImage? {
                 displays.append(displayID)
                 return nil
@@ -60,7 +60,7 @@ enum PointerDisplayLookupContract {
         let strings = Strings()
         var preview: Preview?
         var directCaptureTask: Task<Void, Never>?
-        let hideVorssaintWindows = false
+        let hideMacUtilsWindows = false
         let protectedWindowIDs: Set<CGWindowID> = []
         func route(_ capture: ScreenshotSelectionController.Capture) {}
     }
